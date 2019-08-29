@@ -84,6 +84,7 @@ celerybeat-schedule
 # Environments
 .env
 .venv
+.idea/
 env/
 venv/
 ENV/
@@ -102,3 +103,19 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# myproject
+database/CAL500/holdout/out/stacking/
+database/CAL500/k_fold/out/stacking/
+
+database/FMA/holdout/out/stacking/
+database/FMA/k_fold/out/stacking/
+
+database/MagnaTagATune/holdout/out/stacking/
+database/MagnaTagATune/k_fold/out/stacking/
+
+database/MillionSong/holdout/out/stacking/
+database/MillionSong/k_fold/out/stacking/
+
+database/Music2All/holdout/out/stacking/
+database/Music2All/k_fold/out/stacking/

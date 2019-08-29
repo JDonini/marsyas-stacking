@@ -1,0 +1,52 @@
+name: keras
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - astroid=2.0.2=py36_0
+  - bzip2=1.0.6=h470a237_2
+  - ca-certificates=2018.8.24=ha4d7672_0
+  - certifi=2018.8.24=py36_1
+  - isort=4.3.4=py36_0
+  - lazy-object-proxy=1.3.1=py36h470a237_0
+  - libedit=3.1.20170329=haf1bffa_1
+  - libffi=3.2.1=hfc679d8_5
+  - libgcc-ng=7.2.0=hdf63c60_3
+  - libstdcxx-ng=7.2.0=hdf63c60_3
+  - mccabe=0.6.1=py_1
+  - ncurses=6.1=hfc679d8_1
+  - openssl=1.0.2p=h470a237_0
+  - pep8=1.7.1=py_0
+  - pip=18.0=py36_1
+  - pylint=2.1.1=py36_0
+  - python=3.6.6=h5001a0f_0
+  - readline=7.0=haf1bffa_1
+  - setuptools=40.2.0=py36_0
+  - six=1.11.0=py36_1
+  - sqlite=3.24.0=h2f33b56_1
+  - tk=8.6.8=0
+  - typed-ast=1.1.0=py36_0
+  - wheel=0.31.1=py36_1
+  - wrapt=1.10.11=py36_0
+  - xz=5.2.4=h470a237_1
+  - zlib=1.2.11=h470a237_3
+  - pip:
+    - audioread==2.1.6
+    - cycler==0.10.0
+    - decorator==4.3.0
+    - joblib==0.12.4
+    - kiwisolver==1.0.1
+    - librosa==0.6.1
+    - llvmlite==0.24.0
+    - matplotlib==2.2.2
+    - numba==0.39.0
+    - numpy==1.14.5
+    - pandas==0.23.3
+    - pyparsing==2.2.0
+    - python-dateutil==2.7.3
+    - pytz==2018.5
+    - resampy==0.2.1
+    - scikit-learn==0.19.1
+    - scipy==1.1.0
+prefix: /home/juliano/anaconda3/envs/keras
+
