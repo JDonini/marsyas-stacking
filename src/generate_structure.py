@@ -37,12 +37,10 @@ for i in range(1, NUMBER_FOLD + 1):
     K_FOLD_TRAIN = K_FOLD_ANNOTATIONS + str(i)
     K_FOLD_TEST = K_FOLD_ANNOTATIONS + str(i)
     K_FOLD_VALIDATION = K_FOLD_ANNOTATIONS + str(i)
-    K_EVALUATION = K_FOLD_OUT + 'evaluation/' + str(i)
     K_STACKING = K_FOLD_OUT + 'stacking/' + str(i)
     os.makedirs(K_FOLD_TRAIN, exist_ok=True)
     os.makedirs(K_FOLD_TEST, exist_ok=True)
     os.makedirs(K_FOLD_VALIDATION, exist_ok=True)
-    os.makedirs(K_EVALUATION, exist_ok=True)
     os.makedirs(K_STACKING, exist_ok=True)
 
 
