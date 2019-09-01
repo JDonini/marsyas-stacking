@@ -105,9 +105,6 @@ venv.bak/
 .mypy_cache/
 
 # myproject
-database/CAL500/holdout/out/stacking/
-database/CAL500/k_fold/out/stacking/
-
 database/FMA/holdout/out/stacking/
 database/FMA/k_fold/out/stacking/
 
