@@ -1,7 +1,7 @@
 Per Tag Values
 Precision, Recall, Accuracy, F_Score
-0.359 0.412 0.762 0.379
+0.407 0.390 0.751 0.395
 
 Global Values
 Precision, Recall, Accuracy, F_Score
-0.461 0.513 0.762 0.485
+0.509 0.484 0.751 0.496

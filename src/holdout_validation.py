@@ -1,9 +1,12 @@
 from sklearn.model_selection import train_test_split
 import pandas as pd
 import sys
+import numpy as np
 from generate_structure import TAG_ANNOTATIONS, HOLDOUT_TRAIN, HOLDOUT_TEST, HOLDOUT_VALIDATION, AUDIO
 sys.path.append('utils')
 from config_to_python import SEED
+
+np.random.seed(SEED)
 
 
 def holdout():
@@ -17,8 +20,8 @@ def holdout():
     )
     data = data.sort_values(by=['song_id'])
 
-    train_index, test_index = train_test_split(data, test_size=0.3, shuffle=False, random_state=SEED)
     pd.set_option('mode.chained_assignment', None)
+    train_index, test_index = train_test_split(data, test_size=0.3, shuffle=False, random_state=SEED)
 
     train_index.loc[:, 'song_id'] = AUDIO + train_index['song_id']
     train_index.to_csv(HOLDOUT_TRAIN, sep='\t', index=False, header=False)
