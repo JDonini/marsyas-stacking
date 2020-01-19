@@ -7,11 +7,9 @@ show_menu() {
   RED_TEXT=$(echo "\033[31m")
   ENTER_LINE=$(echo "\033[33m")
   echo -e "${MENU}*********************************************${NORMAL}"
-  echo -e "${MENU}**${NUMBER} 1)${MENU} CAL500 ${NORMAL}"
   echo -e "${MENU}**${NUMBER} 2)${MENU} FMA ${NORMAL}"
   echo -e "${MENU}**${NUMBER} 3)${MENU} MagnaTagATune ${NORMAL}"
   echo -e "${MENU}**${NUMBER} 4)${MENU} MillionSong ${NORMAL}"
-  echo -e "${MENU}**${NUMBER} 5)${MENU} Musci2All ${NORMAL}"
   echo -e "${MENU}*********************************************${NORMAL}"
   echo -e "${ENTER_LINE}Please enter a menu option and enter or ${RED_TEXT} enter to exit. ${NORMAL}"
   read opt
