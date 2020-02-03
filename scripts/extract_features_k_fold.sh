@@ -1,5 +1,7 @@
 #!/bin/bash
 
+START=$(date +%s)
+
 NUMBER_FOLD=$(python "$(pwd)"/utils/config_to_shell.py "NUMBER_FOLD")
 AUDIO=$(python "$(pwd)"/utils/config_to_shell.py "AUDIO")
 MARSYAS_BEXTRACT=$(python "$(pwd)"/utils/config_to_shell.py "MARSYAS_BEXTRACT")
@@ -17,3 +19,8 @@ for i in $(seq "${NUMBER_FOLD}")
 do
     ${MARSYAS_BEXTRACT} -ws 1024 -l -1 -sv -fe "${TEST_TXT}""${i}"/test.txt -w "${TEST_ARFF}""${i}"/test.arff  -od "${AUDIO}"
 done
+
+END=$(date +%s)
+DIFF=$(( $END - $START ))
+echo "Tempo de execução : $DIFF seconds"
+

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+START=$(date +%s)
+
 NUMBER_FOLD=$(python "$(pwd)"/utils/config_to_shell.py "NUMBER_FOLD")
 MARSYAS_KEA=$(python "$(pwd)"/utils/config_to_shell.py "MARSYAS_KEA")
 MARSYAS_RUBY=$(python "$(pwd)"/utils/config_to_shell.py "MARSYAS_RUBY")
@@ -16,3 +18,8 @@ for i in $(seq "${NUMBER_FOLD}")
 do
     "${MARSYAS_RUBY}"/threshold_binarization.rb "${TRAIN_TXT}""${i}"/train.txt "${STACKING}"/"${i}"/stage1_affinities.txt > "${STACKING}"/"${i}"/stage1_predictions.txt
 done
+
+
+END=$(date +%s)
+DIFF=$(( $END - $START ))
+echo "Tempo de execução : $DIFF seconds"
